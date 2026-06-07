@@ -6,4 +6,23 @@
 
 - Now, setting up these low-level container environments is hard, and that is where Docker offers a high-level tool with several powerful functionalities, making it really easy for end users like us. And this is how Docker became so popular.
 
--
+-So we've been talking about images and containers. 
+
+- Let's understand the difference between the two.
+
+- An image is a package or a template, just like a VM template that you might have worked with in the virtualization world. It is used to create one or more containers.
+
+- Containers are running instances of images that are isolated and have their own environments and set of processes.
+
+- This Dockerfile is then used to create an image for their applications. This image can now run on any host with Docker installed on it, and it's guaranteed to run the same way everywhere.
+
+- So the ops team can now simply use the image to deploy the application, since the image was already working when the developer built it, and the operations have not modified it, it continues to work the same way when deployed in production. And that's one example of how a tool like Docker contributes to the DevOps culture.
+
+https://docs.docker.com/desktop/setup/install/linux/
+
+
+   ```
+   cat /etc/*release*
+
+   dpkg --print-architecture
+   ```
