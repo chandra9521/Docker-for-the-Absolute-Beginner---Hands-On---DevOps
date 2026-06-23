@@ -26,3 +26,28 @@ https://docs.docker.com/desktop/setup/install/linux/
 
    dpkg --print-architecture
    ```
+
+
+
+- Let's start by looking at the docker run command. The docker run command is used to run a container from an image.
+
+
+
+
+                ```
+               docker run  <image name>
+               docker run nginx 
+               ```
+
+
+
+
+- Running the docker run nginx command will run an instance of the nginx application on the docker host if it already exists. If the image is not present on the host, it will go out to docker hub and pull that image down.
+
+- But this is only done the first time.For subsequent executions, the same image will be reused.
+
+ - Now one heads up before we go further, docker hub limits unauthenticated pulls to 100 every six hours per IP address. If you log in with docker login, that goes up to 200 every six hours on the free personal tier and unlimited on the paid pro team or business plans.
+
+- So if you start hitting too many requests, errors during this lesson, that's why log in or use a paid account for CI work.
+
+
