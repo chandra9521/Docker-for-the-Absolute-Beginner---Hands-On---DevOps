@@ -18,26 +18,26 @@
 
 - So the ops team can now simply use the image to deploy the application, since the image was already working when the developer built it, and the operations have not modified it, it continues to work the same way when deployed in production. And that's one example of how a tool like Docker contributes to the DevOps culture.
 
-https://docs.docker.com/desktop/setup/install/linux/
 
 
-   ```
-   cat /etc/*release*
 
-   dpkg --print-architecture
-   ```
+
+  https://docs.docker.com/desktop/setup/install/linux/
+
+ ```
+ cat /etc/*release*
+ dpkg --print-architecture
+  ```
 
 
 
 - Let's start by looking at the docker run command. The docker run command is used to run a container from an image.
 
 
-
-
-                ```
-               docker run  <image name>
-               docker run nginx 
-               ```
+```
+docker run  <image name>
+docker run nginx 
+```
 
 
 
