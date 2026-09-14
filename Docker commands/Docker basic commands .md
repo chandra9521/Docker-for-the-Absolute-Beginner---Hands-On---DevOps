@@ -384,9 +384,9 @@ If Bash is not available, try:
 docker exec -it <container-id-or-name> /bin/sh
 ```
 
-`-i` keeps standard input open.
+`-i` keeps standard input open. (Intractive Mode)
 
-`-t` allocates a terminal.
+`-t` allocates a terminal. (TTY)
 
 ---
 
